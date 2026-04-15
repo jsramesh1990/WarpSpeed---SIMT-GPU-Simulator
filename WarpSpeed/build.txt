@@ -1,0 +1,22 @@
+How to Use This Project
+
+    Clone/Create the project:
+
+
+mkdir gpu_simulator_cpp
+cd gpu_simulator_cpp
+# Create all the files above with their respective content
+
+Build:
+
+
+mkdir build
+cd build
+cmake ..
+make -j4
+
+Run:
+
+
+./gpu_simulator     # Main simulator
+./gpu_demo          # Interactive demo

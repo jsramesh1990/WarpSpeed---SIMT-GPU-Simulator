@@ -1,0 +1,25 @@
+gpu_simulator_cpp/
+├── CMakeLists.txt
+├── README.md
+├── .gitignore
+├── src/
+│   ├── main.cpp
+│   ├── runtime/
+│   │   ├── thread_context.hpp
+│   │   └── kernel.hpp
+│   ├── core/
+│   │   ├── warp.hpp
+│   │   ├── block.hpp
+│   │   └── scheduler.hpp
+│   ├── sync/
+│   │   └── barrier.hpp
+│   ├── memory/
+│   │   └── shared_memory.hpp
+│   ├── kernels/
+│   │   ├── reduction.hpp
+│   │   ├── stencil.hpp
+│   │   └── scan.hpp
+│   └── utils/
+│       └── logger.hpp
+└── examples/
+    └── demo.cpp

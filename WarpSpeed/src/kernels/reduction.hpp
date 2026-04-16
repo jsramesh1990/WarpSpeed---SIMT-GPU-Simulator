@@ -35,7 +35,7 @@ inline int reduction_kernel(ThreadContext& ctx, SharedMemory& shared,
     return 0;
 }
 
-// Alternative: using atomic operations (more realistic)
+// Alternative: using atomic operations (more realistic) & PLEASE check tha file is present or not
 #include <atomic>
 
 inline int reduction_kernel_atomic(ThreadContext& ctx, SharedMemory& shared,

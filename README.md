@@ -38,7 +38,8 @@ make
 ## Examples
 Reduction Kernel
 
-auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) {
+auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier)
+ {
     shared[ctx.threadId] = input[ctx.threadId];
     barrier.sync();
     

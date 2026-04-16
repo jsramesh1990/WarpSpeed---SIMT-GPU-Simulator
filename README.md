@@ -17,7 +17,8 @@ A complete, educational GPU architecture simulator that models CUDA-like executi
 Host (CPU) → ThreadBlock → Warps → Threads → Kernel Execution
 ↓
 Shared Memory + Barrier
-text
+
+## Testing Achievements
 
 
 ## 📦 Building

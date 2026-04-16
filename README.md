@@ -29,7 +29,6 @@ cmake ..
 make
 
 🎯 Running
-bash
 
 # Main simulator
 ./gpu_simulator
@@ -37,9 +36,8 @@ bash
 # Demo with examples
 ./gpu_demo
 
-📚 Examples
+## Examples
 Reduction Kernel
-cpp
 
 auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) {
     shared[ctx.threadId] = input[ctx.threadId];
@@ -83,9 +81,7 @@ auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) 
 
     Master synchronization primitives
 
-📜 License
 
-MIT License - See LICENSE file
 🤝 Contributing
 
 PRs welcome! Focus on:

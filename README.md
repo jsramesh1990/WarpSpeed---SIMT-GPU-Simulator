@@ -3,7 +3,7 @@
 
 A complete, educational GPU architecture simulator that models CUDA-like execution model with threads, warps, blocks, shared memory, and barriers.
 
-## 🚀 Features
+##  Features
 
 - **Thread-level parallelism** - Simulates GPU threads using std::thread
 - **Warp abstraction** - Groups threads into warps (SIMT execution)
@@ -12,23 +12,22 @@ A complete, educational GPU architecture simulator that models CUDA-like executi
 - **Shared memory** - Fast on-chip memory per block
 - **GPU-like kernels** - Reduction, Stencil, Scan examples
 
-## 🏗️ Architecture
+##  Architecture
 
 Host (CPU) → ThreadBlock → Warps → Threads → Kernel Execution
 ↓
 Shared Memory + Barrier
-text
 
+## Testing Achievements
 
-## 📦 Building
+##  Building
 
 ```bash
 mkdir build && cd build
 cmake ..
 make
 
-🎯 Running
-bash
+## Running
 
 # Main simulator
 ./gpu_simulator
@@ -36,9 +35,8 @@ bash
 # Demo with examples
 ./gpu_demo
 
-📚 Examples
+## Examples
 Reduction Kernel
-cpp
 
 auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) {
     shared[ctx.threadId] = input[ctx.threadId];
@@ -52,7 +50,7 @@ auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) 
     }
 };
 
-🔬 Key Concepts
+## Concepts
 
     SIMT - Single Instruction Multiple Threads
 
@@ -62,7 +60,7 @@ auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) 
 
     Shared Memory - User-managed cache
 
-📊 Performance Tips
+## Performance Tips
 
     Minimize barrier usage
 
@@ -72,7 +70,7 @@ auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) 
 
     Bank conflict awareness
 
-🎓 Learning Outcomes
+## Learning Outcomes
 
     Understand GPU execution model
 
@@ -82,10 +80,8 @@ auto reduction = [](ThreadContext& ctx, SharedMemory& shared, Barrier& barrier) 
 
     Master synchronization primitives
 
-📜 License
 
-MIT License - See LICENSE file
-🤝 Contributing
+## Contributing
 
 PRs welcome! Focus on:
 

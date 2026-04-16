@@ -4,7 +4,7 @@
 #include "../memory/shared_memory.hpp"
 #include "../sync/barrier.hpp"
 
-// Parallel reduction kernel
+// Parallel reduction kernel of your sys
 inline int reduction_kernel(ThreadContext& ctx, SharedMemory& shared, 
                            Barrier& barrier, const int* input, int N) {
     

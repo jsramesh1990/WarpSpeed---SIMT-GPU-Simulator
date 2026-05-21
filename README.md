@@ -540,12 +540,6 @@ Then open a Pull Request.
 
 ---
 
-# License
-
-This project is licensed under the MIT License.
-
----
-
 # About
 
 WarpSpeed brings CUDA-inspired GPU programming concepts to standard modern C++.
